@@ -1,0 +1,16 @@
+{{ header }}
+<div class="container">
+    <div class="row">
+        {{ column_left }}
+        <div id="content" class="col" style="padding: 50px; min-height: 300px;">
+            {% if digi_message %}
+                <div class="alert text-center alert-danger alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> {{ digi_message }}</div>
+            {% endif %}
+            <div class="btn-try-again text-center">
+                <a href="{{ digi_link }}" class="btn btn-primary" style="padding: 10px 50px; margin-top: 10px;">{{ digi_button }}</a>
+            </div>
+        </div>
+        {{ column_right }}
+    </div>
+</div>
+{{ footer }}
